@@ -1,0 +1,584 @@
+/*This is my 218 CONTACT PAGE using Eric Meyer's reset at the top of my page -- your CSS starts on line 56 */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* This is the beginning of my CONTACT PAGE CSS */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url("images/background.png");
+  background-attachment: fixed;
+  background-repeat: repeat;
+  cursor: url('images/crane2.png'), auto;
+  /*background-size: cover;*/
+	
+	
+}
+
+}
+#main {
+  z-index: -999;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.center {
+    width: 1000px;
+	height: 1000px;
+	border-radius: 25px;
+	padding: 2%;
+    margin: 50px auto;
+ 	background: rgba(211, 188, 150, .25); /*this uses opacity of 75% for the background color*/
+	text-align: center;
+}
+
+#quote-center{
+		height: 782px;
+        /*border: 4px dashed purple; /* the center container will have a dashed purple border when the screen gets smaller */
+    }
+	
+#navigation {
+	height: 38px;
+	background: rgba(255, 255, 255, 1.00);
+	margin: 15px;
+	font-family: 'Catamaran', sans-serif;
+	border-radius: 25px;
+}
+
+#intro-text {
+	margin: 25px;
+	background-color: white;
+	/*width: 780px;*/
+	height: 100px;
+	/*left: 65px;*/
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	position: relative;
+	border-radius: 50px;
+}
+
+/*#intro-text:hover{
+	
+	background-color: #FFC53D;
+}*/
+	
+#portfolio-text {
+	margin: 25px;
+	background-color: white;
+	/*width: 780px;*/
+	height: 38px;
+	/*left: 65px;*/
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 15px;
+	position: relative;
+	border-radius: 25px;
+}
+
+/*#portfolio-text:hover{
+	background-color: #FFC53D;
+	}*/
+
+.quote-block {
+	overflow: hidden;
+	height: 255px;
+	width: 255px;
+	position: relative;
+	border-radius: 25px;
+	margin: 20px;
+	
+}
+
+#cslewisquote {
+	padding: 10px;
+	background-color: white;
+    margin-left: 30px;
+	position: absolute;
+	z-index: 0;
+}
+
+#cslewispic {
+	position: absolute;
+    margin-left: 30px;
+	z-index: 1;
+	height: 275px;
+	width: 275px;
+	/*left:250px;
+	top: 20px;*/
+	
+}
+
+#corriepic {
+	position: absolute;
+	z-index: 1;
+	height: 275px;
+	margin-left: 360px;
+	width: 275px;
+}
+
+#corriequote {
+	padding: 10px;
+	background-color: white;
+	position: absolute;
+	z-index: 0;
+	margin-left: 360px;
+    
+}
+
+#fatherquote {
+	padding: 10px;
+	background-color: white;
+	position: absolute;
+	z-index: 0;
+	margin-top: 348px;
+    margin-left: 30px;
+}
+
+#fatherpic {
+	position: absolute;
+	z-index: 1;
+	height: 275px;
+	margin-top: 348px;
+	width: 275px;
+    margin-left: 30px;
+}
+
+#hugopic {
+	position: absolute;
+	z-index: 1;
+	height: 275px;
+	margin-left: 690px;
+	width: 275px;
+}
+
+#hugoquote {
+	padding: 10px;
+	background-color: white;
+	position: absolute;
+	z-index: 0;
+	margin-left: 690px;
+}
+
+#twainpic {
+	position: absolute;
+	z-index: 1;
+	height: 275px;
+	margin-left: 360px;
+	margin-top: 348px;
+	width: 275px;
+}
+
+#twainquote {
+	padding: 10px;
+	background-color: white;
+	position: absolute;
+	z-index: 0;
+	margin-left: 360px;
+	margin-top: 348px;
+}
+
+#lastpic {
+	position: absolute;
+	z-index: 1;
+	height: 275px;
+	margin-left: 690px;
+    margin-top: 348px;
+	width: 275px;
+}
+
+#lastquote {
+	padding: 10px;
+	background-color: white;
+	position: absolute;
+	z-index: 0;
+	margin-left: 690px;
+    margin-top: 348px;
+}
+
+	#jquery-carousel {
+        position: relative;
+		margin-left:auto;
+		margin-right:auto;
+        width: 780px;
+        height: 500px;	
+    }
+	
+    #jquery-carousel ul {
+        padding: 0;
+        margin: 0;
+		height: 499px;
+        list-style: none;
+		border-radius: 50px;
+		overflow: hidden;
+		width: 770px;
+		position: absolute;
+		box-shadow: 4px 4px 4px #aaa;
+    }
+	
+    #jquery-carousel li {
+        
+		display: none;
+    }
+   
+    #jquery-carousel li.active {
+		padding: 0;
+		margin-left: auto;
+		margin-right: -20px;
+		text-align: center;
+		display: block;
+		
+    }
+
+    #jquery-carousel .prev,
+    #jquery-carousel .next {
+        background-color: black;
+        z-index: 200;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 225px;
+        font-weight: bold;
+        border-radius: 25px;
+		
+    }
+    #jquery-carousel .prev a,
+    #jquery-carousel .next a {
+       color: white;
+       font-weight: bold;
+	   font-family: 'Catamaran', sans-serif;
+	   font-size: 50px;
+       text-decoration: none; 
+       margin-bottom: 3px;
+    }
+	
+	#jquery-carousel .prev a:hover,
+    #jquery-carousel .next a:hover {
+       color: #FFC53E;
+    }
+    #jquery-carousel .prev {
+       left: -20px;
+    }
+    #jquery-carousel .next {
+       right: -10px;
+    }
+    
+#logo {
+    margin: 16px, 100px, 0px, 100px;
+	text-align: center;
+	display:inline;
+}
+
+h1 {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 2.0em;
+	line-height: 4.0em;
+    margin: 0px auto 10px auto;
+    color: #000;
+}
+
+h2 {
+    font-family: "fertigo-pro",sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #000;
+    padding: 0px 0px;
+    margin: 0px auto 25px auto;
+}
+
+h3 {
+	font-family: 'Catamaran', sans-serif;
+    font-size: 1.0em;
+    line-height: 1.6em;
+    color: #000;
+}
+
+p {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    color: #000;
+}
+
+nav li{
+    display:inline;
+}
+
+nav a{
+    display:inline-block;
+    padding:10px;
+	float: right;
+	margin-right: 10px;
+}
+
+a{
+    color:#868076;
+    text-decoration:none;
+	
+}
+    
+a:hover{
+    color:#FFC53D;
+    font-weight:bold;
+	cursor: url('images/crane_select2.png'), auto;
+}
+
+.contact-text, .contact-icon {
+	display: inline;
+}
+
+
+    
+@media (max-width: 768px) {
+    
+    .center{
+        max-width: 94%;
+        /*bottom: 50px;*/
+        left:16 px;
+        margin: 50px auto;
+		
+        /*border: 4px dashed purple; /* the center container will have a dashed purple border when the screen gets smaller */
+    }
+	
+	#quote-center{
+        max-width: 94%;
+        /*bottom: 50px;*/
+        left:16 px;
+        margin: 50px auto;
+		height: 3750px;
+        /*border: 4px dashed purple; /* the center container will have a dashed purple border when the screen gets smaller */
+    }
+	
+	img {
+		max-width: 100%;
+	}
+	
+    
+	
+    h1{
+        font-size: .8em;
+        line-height:1.5em;
+    }
+    h2{
+        font-size:1em;
+        line-height:1.4em;
+    }
+	h3{
+		font-size: 90%;
+	}
+	p{
+		font-size:1em;
+        line-height:1.4em;
+	}
+	
+    nav li{
+		
+        display:block; /* the nav elements will stack on top of one another which allows for a better user eperience */
+		
+    }
+    nav a{
+        display:inline-block;
+    }
+	
+	#jquery-carousel {
+        position: relative;
+		margin-left:auto;
+		margin-right:auto;
+        width: 90%;
+        height: 40%;	
+    }
+	#jquery-carousel ul {
+        padding: 0;
+        margin: 20px;
+		height: 67%;
+        list-style: none;
+		border-radius: 50px;
+		overflow: hidden;
+		width: 90%;
+		position: relative;
+		}
+	#jquery-carousel li.active {
+		padding: 0;
+		margin-left: -30px;
+		text-align: center;
+		display: block;
+	}
+	
+	#jquery-carousel li.active img {
+        max-width: 148%;
+    }
+	
+	#jquery-carousel .prev,
+    #jquery-carousel .next {
+        top: 25%;
+		font-size: 25%;
+		position: absolute;
+}
+#intro-text {
+	padding-bottom: 14%;
+	height: 20%;
+}
+
+#portfolio-text{
+	height: 6%;
+	}
+
+.quote-block {
+	overflow: hidden;
+	height: 255px;
+	width: 255px;
+	position: absolute;
+	border-radius: 25px;
+	margin-left: 10%;
+	/*margin: 20px;*/
+}
+
+#cslewisquote {
+	padding: 10px;
+	background-color: white;
+	position: relative;
+    margin: 10px auto;
+}
+
+#cslewispic {
+	position: relative;
+	height: 275px;
+	width: 275px;
+	margin: 10px auto;
+}
+
+#corriepic {
+	position: relative;
+	height: 275px;
+	width: 275px;
+	margin: 10px auto;
+}
+
+#corriequote {
+	padding: 10px;
+	background-color: white;
+	position: relative;
+	margin: 10px auto;
+}
+
+#fatherquote {
+	padding: 10px;
+	background-color: white;
+	position: relative;
+	margin: 10px auto;
+}
+
+#fatherpic {
+	position: relative;
+	height: 275px;
+	width: 275px;
+	margin: 10px auto;
+}
+
+#hugopic {
+	position: relative;
+	height: 275px;
+	width: 275px;
+	margin: 10px auto;
+}
+
+#hugoquote {
+	padding: 10px;
+	background-color: white;
+	position: relative;
+	margin: 10px auto;
+}
+
+#twainpic {
+	position: relative;
+	height: 275px;
+	width: 275px;
+	margin: 10px auto;
+}
+
+#twainquote {
+	padding: 10px;
+	background-color: white;
+	position: relative;
+	margin: 10px auto;
+}
+
+#lastpic {
+	position: relative;
+	height: 275px;
+	width: 275px;
+	margin: 10px auto;
+}
+
+#lastquote {
+	padding: 10px;
+	background-color: white;
+	position: relative;
+	margin: 10px auto;
+}
+
+
+.contact-text {
+	display: none;
+}
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<!-- THE TITLE WILL APPEAR IN THE BROWSER WINDOW OR TAB -->
+<title>Heather Collins Contact Page</title>
+    
+<!--Media Queries-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+<!--font info-->    
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+<script src="https://use.typekit.net/inm0hza.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+    
+    
+<!--link to css-->
+<link rel="stylesheet" href="styles-contact.css">
+
+<script src="https://use.fontawesome.com/3202914a61.js"></script>
+
+<!--jquery link-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<!--<script>$(function() { alert('hello') });</script>-->
+
+<script>
+		
+		$(document).ready(function() {
+		 
+       
+        $('#jquery-carousel .next a').on("click", function(e) {
+            e.preventDefault();
+			
+            var currentSlide = $('#jquery-carousel li.active');
+            var nextSlide = $('#jquery-carousel li.active').next(); 
+           
+            currentSlide.removeClass('active');
+           
+            if (nextSlide.length === 0 ) {
+              nextSlide = $('#jquery-carousel li').first();
+            }
+            nextSlide.addClass('active');
+        });
+        
+        $('#jquery-carousel .prev a').on("click", function(e) {
+            e.preventDefault();
+            var currentSlide = $('#jquery-carousel li.active');
+            var prevSlide = $('#jquery-carousel li.active').prev();
+            
+            currentSlide.removeClass('active');
+            
+            if (prevSlide.length === 0 ) {
+              prevSlide = $('#jquery-carousel li').last();
+            }
+            prevSlide.addClass('active');
+        });
+		moveSlide();
+     });
+	 /*function moveSlide(){
+		$(".next a").click();
+		setTimeout(moveSlide, 3000);
+		}*/
+	   </script>
+
+
+</head>
+
+<body>
+    
+    <div class="center">
+	<div id="navigation" >
+		<nav>
+			<li><a href="quote.html" class=link>
+				<span class="contact-text">Favorite Quotes</span>
+				<i class="fa fa-quote-right" aria-hidden="true"></i> </a></li>
+			<li><a href="heather_collins_resume.pdf" class=link>
+				<span class="contact-text">Resume</span>
+				<i class="fa fa-file-text" aria-hidden="true"></i> </a></li>
+			<li><a href="https://www.linkedin.com/in/hlynncollins" target="_blank" class=link>
+				<span class="contact-text">LinkedIn</span>
+				<i class="fa fa-linkedin-square" aria-hidden="true"></i> </a></li> 
+			<li><a href="mailto:heathermarilyncollins@gmail.com" class=link>
+				<span class="contact-text">Email Me</span>
+				<i class="fa fa-envelope contact-icon" aria-hidden="true"></i> </a></li>
+		</nav>
+	</div>
+	
+	
+	<div id=logo>
+	   <img src="images/personal-id.png">
+    </div>
+		
+	<div id="intro-text">
+		<h3>I am a student at Cal Poly, San Luis Obispo studying Graphic Communication <br> and concentrating in Web and Digital Media. <br> I am passionate about clean and effective design, for both print and web. <br> I enjoy dance, running, cutting up old magazines, reading obscure books, and the ocean. </h3>
+	</div>		
+	
+	<div id=portfolio-text>
+		<p>Sample of my portfolio</p>
+	</div>
+		
+	<div id="jquery-carousel">
+		<div class="prev"><a href="">&lt;&lt;</a></div>
+	<ul>
+		<li class="active" ><a href="images/item1.jpg"><img 
+		src ="images/item1.jpg"></a><br>Item1</li>
+		<li><a href="images/item2.jpg"><img 
+		src ="images/item2.jpg"></a><br>Item2</li>
+		<li><a href="images/item3.jpg"><img 
+		src ="images/item3.jpg"></a><br>Item3</li>
+		<li><a href="images/item4.jpg"><img 
+		src ="images/item4.jpg"></a><br>Item4</li>
+		<li><a href="images/item5.jpg"><img 
+		src ="images/item5.jpg"></a><br>Item5</li>
+		<li><a href="images/item6.jpg"><img 
+		src ="images/item6.jpg"></a><br>Item6</li>
+		<li><a href="images/item7.jpg"><img 
+		<li><a href="images/item12.jpg"><img 
+		src ="images/item12.jpg"></a><br>Item12</li>
+		
+	</ul>
+	<div class="next"><a href="">&gt;&gt;</a></div>
+	</div>
+    
+    </div> <!--end of center div-->
+
+</body>
+
+</html>
